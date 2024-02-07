@@ -5,6 +5,11 @@ public class Vehicule extends Sujet {
     protected String description;
     protected double prix;
 
+    public Vehicule() {
+        setDescription("description");
+        setPrix(0d);
+    }
+
     public Vehicule(String description, double prix) {
         setDescription(description);
         setPrix(prix);

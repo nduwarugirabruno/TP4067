@@ -1,6 +1,7 @@
 package com.tp.tp4067.catalogue;
 
 public class Vehicule extends Sujet {
+
     protected String description;
     protected double prix;
 
@@ -27,4 +28,11 @@ public class Vehicule extends Sujet {
         this.notifie();
     }
 
+    @Override
+    public String toString() {
+        return "Vehicule{" +
+                "description='" + description + '\'' +
+                ", prix=" + prix +
+                "} " + super.toString();
+    }
 }

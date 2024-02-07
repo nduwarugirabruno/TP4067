@@ -21,4 +21,11 @@ public abstract class Sujet {
         for (Observateur observateur : observateurs)
             observateur.actualise();
     }
+
+    @Override
+    public String toString() {
+        return "Sujet{" +
+                "observateurs=" + observateurs +
+                '}';
+    }
 }

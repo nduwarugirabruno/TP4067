@@ -1,5 +1,7 @@
 package com.tp.tp4067;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class MainApp {
@@ -16,10 +18,24 @@ public class MainApp {
         System.out.println("        ****  Participants: TOUKAM Aurel, NDUWARUGIRA Bruno et MARRE Yasmine  ****        ");
         System.out.println("        **************************************************************************        ");
         System.out.println("                                                                                          ");
+
+        switch (menuP()) {
+            case 1 -> {
+
+            }
+            case 2 -> {
+
+            }
+            case 3 -> {
+
+            }
+
+        }
     }
 
-    private int menuP() {
-        int choix = 0;
+    private static int menuP() {
+        int choix;
+        Scanner scanner = new Scanner(System.in);
         System.out.println("                             *******MENU PRINCIPAL********                                ");
         System.out.println("        --------------------------------------------------------------------------        ");
         System.out.println("        __________________________________________________________________________        ");
@@ -27,13 +43,15 @@ public class MainApp {
         System.out.println("        2- ");
         System.out.println("        9- Quitter................................................................        ");
         System.out.println("        Quel est votre choix ???................");
-        /*scanf("%d", &playerNumber);
-        while(playerNumber<1 || playerNumber>2)
-        {
-            scanf("%d", &playerNumber);
-            System.out.println("Choix invalide; Choisissez l'option entre 1 ou 2 !!!Quel mode de jeu desirez-vous ? ");
+
+        choix = scanner.nextInt();
+        scanner.nextLine();
+        while (choix < 1 || choix > 9) {
+            System.out.println("Choix invalide... Choisissez l'option entre 1 ou 9 !!!");
+            System.out.println("        Quel est votre choix ???................");
+            choix = scanner.nextInt();
+            scanner.nextLine();
         }
-        */
         return choix;
     }
 }

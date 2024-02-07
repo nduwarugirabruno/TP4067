@@ -48,4 +48,14 @@ public class DataLoader {
             return new ArrayList<>();
         }
     }
+
+    public void saveData(ArrayList<?> vehicules) {
+        try {
+            Path wFilePath = Paths.get("src/main/resources/json/vehicules.json");
+            objectMapper.writeValue(wFilePath.toFile(), vehicules);
+        } catch (Exception e) {
+            System.out.println("Message: " + e.getMessage());
+            System.out.println("Cause: " + e.getCause());
+        }
+    }
 }

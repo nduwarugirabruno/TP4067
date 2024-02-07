@@ -24,8 +24,7 @@ public abstract class Sujet {
 
     @Override
     public String toString() {
-        return "Sujet{" +
-                "observateurs=" + observateurs +
-                '}';
+        return "\nSujet:" +
+                "\n\t\tobservateurs=" + observateurs;
     }
 }

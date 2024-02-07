@@ -1,18 +1,19 @@
-[
-	{
-		"description": "Voiture de luxe",
-		"prix": 5000
-	},
-	{
-		"description": "Voiture de luxe pro",
-		"prix": 10000
-	},
-	{
-		"description": "Voiture de luxe pro max",
-		"prix": 15000
-	},
-	{
-		"description": "Voiture de luxe ultra",
-		"prix": 20000
-	}
-]
+[ {
+  "description" : "Voiture de luxe",
+  "prix" : 5000.0
+}, {
+  "description" : "Voiture de luxe pro",
+  "prix" : 10000.0
+}, {
+  "description" : "Voiture de luxe pro max",
+  "prix" : 15000.0
+}, {
+  "description" : "Voiture de luxe ultra",
+  "prix" : 20000.0
+}, {
+  "description" : "Essence",
+  "prix" : 23.0
+}, {
+  "description" : "Elec",
+  "prix" : 34.0
+} ]

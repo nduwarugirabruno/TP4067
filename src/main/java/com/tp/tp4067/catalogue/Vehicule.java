@@ -35,9 +35,9 @@ public class Vehicule extends Sujet {
 
     @Override
     public String toString() {
-        return "Vehicule{" +
-                "description='" + description + '\'' +
-                ", prix=" + prix +
-                "} " + super.toString();
+        return "\n\t\t\tVehicule:" +
+                "\n\t\t\t\tdescription: " + description +
+                "\n\t\t\t\tprix " + prix;
+                //"\n\t\t" + super.toString();
     }
 }
